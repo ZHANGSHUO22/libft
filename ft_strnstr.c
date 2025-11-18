@@ -6,9 +6,11 @@
 /*   By: zshuo <zshuo@student.42prague.com>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/11/16 22:18:57 by zshuo             #+#    #+#             */
-/*   Updated: 2025/11/18 12:04:26 by zshuo            ###   ########.fr       */
+/*   Updated: 2025/11/18 15:54:49 by zshuo            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+
+#include <stddef.h>
 
 char	*ft_strnstr(const char *big, const char *small, size_t len)
 {
