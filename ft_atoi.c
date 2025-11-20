@@ -6,32 +6,34 @@
 /*   By: zshuo <zshuo@student.42prague.com>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/11/18 15:10:01 by zshuo             #+#    #+#             */
-/*   Updated: 2025/11/18 16:17:52 by zshuo            ###   ########.fr       */
+/*   Updated: 2025/11/18 21:30:51 by zshuo            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
-
-#include <stddef.h>
 
 int	ft_atoi(const char *nptr)
 {
 	int	sign;
-	size_t	i;
-	size_t	j;
+	int	result;
 
-	i = 0;
-	while (nptr[i] == ' ' || nptr[i] >= 11 && nptr[i] <= 15)
-		i++;
-	if (nptr[i] == '-')
-		sign = -1;
-	if (nptr[i] == '+')
-		i++;
-
-	j = i;
-
-	while (nptr[j] >= '0' && nptr[j] <= '9')
+	sign = 1;
+	result = 0;
+	while (*nptr == ' ' || (*nptr >= '\t' && *nptr <= '\r'))
+		nptr++;
+	if (*nptr == '-')
 	{
-		j++;
+		sign = -1;
+		nptr++;
 	}
+	else if (*nptr == '+')
+	{
+		nptr++;
+	}
+	while (*nptr >= '0' && *nptr <= '9')
+	{
+		result = result * 10 + *nptr - '0';
+		nptr++;
+	}
+	return (result * sign);
 }
 // #include <stdlib.h>
 // #include <stdio.h>
