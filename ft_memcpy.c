@@ -6,7 +6,7 @@
 /*   By: zshuo <zshuo@student.42prague.com>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/11/20 12:44:21 by zshuo             #+#    #+#             */
-/*   Updated: 2025/11/20 13:57:27 by zshuo            ###   ########.fr       */
+/*   Updated: 2025/11/20 15:14:16 by zshuo            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -20,7 +20,6 @@ void	*ft_memcpy(void *dest, const void *src, size_t n)
 
 	d = (unsigned char *)dest;
 	s = (const unsigned char *)src;
-
 	i = 0;
 	if (!dest && !src)
 		return (NULL);
@@ -31,4 +30,3 @@ void	*ft_memcpy(void *dest, const void *src, size_t n)
 	}
 	return (dest);
 }
-
