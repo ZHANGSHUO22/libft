@@ -6,7 +6,7 @@
 /*   By: zshuo <zshuo@student.42prague.com>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/11/20 15:16:27 by zshuo             #+#    #+#             */
-/*   Updated: 2025/12/02 13:32:28 by zshuo            ###   ########.fr       */
+/*   Updated: 2025/12/14 21:39:26 by zshuo            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -24,4 +24,3 @@ char	*ft_strdup(const char *s)
 	ptr = ft_memcpy(ptr, s, s_len + 1);
 	return (ptr);
 }
-
